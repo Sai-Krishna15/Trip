@@ -1,0 +1,91 @@
+.itinerary-display{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+.itinerary-top{
+    position: relative;
+}
+.itinerary-display .itinerary-top{
+    height: 500px;
+}
+.itinerary-display .itinerary-top img{
+    width: 100%;
+    height: 100%;
+    opacity: .8;
+}
+.itinerary-top .itinerary-top-matter{
+    position: absolute;
+    bottom: 50px;
+    padding: 1rem 5rem;
+    color: black;
+}
+.itinerary-top-matter h1{
+    padding: .3rem;
+}
+.itinerary-top-matter p{
+    padding: .3rem;
+    color: white;
+    font-size: 22px;
+}
+.itinerary-top-matter button{
+    color: #fff;
+    background: #ff4141;
+    padding: .5rem;
+    font-size: 1.2rem;
+    border: none;
+    outline: none;
+}
+.itinerary-bottom{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin: 50px auto;
+}
+.itinerary-bottom .itinerary-bottom-content{
+    display: flex;
+    margin: 30px 0px;
+}
+.itinerary-bottom-content .itinerary-bottom-left{
+    width: 20%;
+    height: 1000px;
+}
+.itinerary-bottom-content .itinerary-bottom-right{
+    width: 70%;
+    height: 100%;
+}
+.itinerary-bottom-right-content{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 40px;
+}
+/* .itinerary-bottom-right-content .one{
+    width: 210px;
+} */
+.itinerary-bottom-right-content .one img{
+    width: 100%;
+    height: 250px;
+}
+@media(max-width:1280px) {
+    .itinerary-bottom{
+        width: 100%;
+    }
+    .itinerary-bottom-left{
+        margin-left: 20px;
+    }
+}
+@media(max-width:1024px) {
+    .itinerary-bottom-right-content{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+@media(max-width:800px) {
+    .itinerary-bottom-right-content{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media(max-width:500px) {
+    .itinerary-bottom-right-content{
+        grid-template-columns: repeat(1,1fr);
+    }
+}

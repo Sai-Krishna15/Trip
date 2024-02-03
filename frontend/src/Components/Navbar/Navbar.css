@@ -1,0 +1,84 @@
+.navbar{
+    display: flex;
+    padding: 5px;
+    justify-content: space-between;
+    box-shadow: 1px 2px 2px -2px #33333363;
+    /* position: fixed; */
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.479);
+    color: white;
+}
+.nav-left{
+    display: flex;
+    align-items: center;
+}
+.nav-left .nav-logo{
+    font-size: 20px;
+    font-weight: 600;
+    color: orange;
+    padding: 10px;
+}
+.nav-left .nav-menu-left{
+    display: flex;
+    list-style-type: none;
+    padding: 10px;
+}
+.nav-left .nav-menu-left li{
+    padding: 0px 20px;
+}
+.nav-right{
+    display: flex;
+    align-items: center;
+}
+.nav-right .nav-menu-right{
+    display: flex;
+    list-style-type: none;
+    padding: 10px;
+}
+.nav-right .nav-menu-right li{
+    padding: 0px 20px;
+}
+li:hover{
+    color: orange;
+    transition: 0.4s;
+}
+@media(max-width:800px){
+    .navbar{
+        padding: 3px;
+    }
+    .nav-left .nav-logo{
+        font-size: 16px;
+        font-weight: 600;
+        color: orange;
+        padding: 5px;
+    }
+    .nav-left .nav-menu-left li{
+        padding: 0px 10px;
+    }
+    .nav-right .nav-menu-right li{
+        padding: 0px 10px;
+    }
+    li{
+        font-size: 16px;
+    }
+}
+@media(max-width:500px){
+    .navbar{
+        padding: 3px;
+    }
+    .nav-left .nav-logo{
+        font-size: 16px;
+        font-weight: 600;
+        color: orange;
+        padding: 5px;
+    }
+    .nav-left .nav-menu-left li{
+        padding: 0px 5px;
+    }
+    .nav-right .nav-menu-right li{
+        padding: 0px 5px;
+    }
+    li{
+        font-size: 12px;
+    }
+}

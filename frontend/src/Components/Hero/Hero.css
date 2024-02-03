@@ -1,0 +1,68 @@
+.hero{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5) 30%, rgba(0, 0, 0, 0.5) 50%),url('../Assests//hero-main.avif');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: transparent
+}
+.hero .hero-main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.hero-main h1{
+    font-size: 50px;
+    color: white;
+}
+.hero-main p{
+    padding: 5px;
+    color: rgb(255,255,255,0.5);
+    font-size: 30px;
+}
+.hero-main button{
+    color: white;
+    background: #ff4141;
+    width: 220px;
+    border-radius: 30px;
+    font-size: 30px;
+    font-weight: 500;
+    padding: 15px;
+    outline: none;
+    border: none;
+    margin-top: 20px;
+}
+@media(max-width:800px){
+    .hero-main h1{
+        font-size: 30px;
+        color: white;
+    }
+    .hero-main p{
+        padding: 5px;
+        color: rgb(255,255,255,0.5);
+        font-size: 20px;
+    }
+    .hero-main button{
+        padding: 10px;
+        font-size: 20px;
+    }
+}
+@media(max-width:500px){
+    .hero-main h1{
+        font-size: 25px;
+        color: white;
+    }
+    .hero-main p{
+        padding: 5px;
+        color: rgb(255,255,255,0.5);
+        font-size: 20px;
+    }
+    .hero-main button{
+        padding: 7px;
+        font-size: 20px;
+    }
+}
